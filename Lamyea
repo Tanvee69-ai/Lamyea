@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you Lamyea?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #yes-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        #no-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Are you Lamyea?</h1>
+
+    <button id="yes-btn">Yes</button>
+    <button id="no-btn">No</button>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById("yes-btn").onclick = function() {
+            document.getElementById("message").innerHTML = 
+            "May you continue to stay as chill as you are now, and may your future be filled with even more brilliance and success.<br>God bless you 🖤";
+        };
+
+        document.getElementById("no-btn").onclick = function() {
+            document.getElementById("message").innerHTML = "You are lying. Try again!";
+        };
+    </script>
+
+</body>
+</html>
